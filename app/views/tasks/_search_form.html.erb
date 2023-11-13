@@ -1,0 +1,8 @@
+<%= form_tag(tasks_path, method: "get", class: "form-inline", style: "background-color: #f2f2f2; padding: 15px; border-radius: 10px;") do %>
+  <div class="input-group">
+    <%= text_field_tag(:search, params[:search], class: "form-control", placeholder: "Search") %>
+    <div class="input-group-append">
+      <%= submit_tag("Search", class: "btn btn-primary") %>
+    </div>
+  </div>
+<% end %>
